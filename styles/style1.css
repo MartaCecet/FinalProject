@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=El+Messiri:wght@400;500;600;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=El+Messiri:wght@400;500;600;700&family=Pacifico&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.container {
+    
+    width: 100%;
+    margin: 0 auto;
+    /*background-image: url(/pages/images/Shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+    background-color: rgb(247, 247, 247);
+    
+    background-position: -170px;
+}
+
+.header {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+   
+    background-color: #bdbfc4;
+    height: 70px;
+    
+
+}
+
+.logo {
+    
+    max-width: 200px;
+    width: 100%;
+    
+}
+.logo img {
+    max-width: 60px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.logo span {
+    font-size: 30px;
+    font-family: 'Comforter Brush';
+    font-weight: bold;
+    line-height: 86px;
+    color: black;
+    transform: rotate(3);
+}
+
+.menu__nav {
+    max-width: 500px;
+    width: 100%;
+}
+
+.menu__nav ul{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu__nav li {
+    text-align: center;
+    font-family: 'El Messiri';
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+    line-height: 70px;
+    width: 120px;
+    
+}
+
+.menu__nav li:hover {
+    background-color: #646566;
+    color: #fff;
+}
+
+
+
+.cart img {
+    max-width: 80px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.main {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+   
+
+}
+
+.main__image {
+    position: relative;
+}
+
+.main__image .img-plate {
+    max-width: 1400px;
+    width: 100%;
+    padding-top: 150px;
+    padding-right: 20px;
+}
+
+.main__image .img-capa1 {
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    top: 77px;
+    right: 255px;
+    z-index: 0;
+    rotate: 4deg;
+
+}
+
+.main__image .img-capa2 {
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    top: 5px;
+    right: 25px;
+
+}
+
+.main__image .img-capa3 {
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    top: 12px;
+    right: 400px;
+
+}
+
+.block__info {
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.title {
+    font-family: 'Rubik Mono One';
+    font-size: 80px;
+    line-height: 80px;
+    color: rgb(5, 99, 5);
+}
+
+.title2 {
+    max-width: 700px;
+    width: 100%;
+    font-family: 'Comforter Brush';
+    font-size: 80px;
+    color: rgb(196, 157, 90);
+    position: absolute;
+    top: 110px;
+    right: -20px;
+    transform: rotate(-15deg);
+    text-align: right;
+}
+
+.main__text {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 100px;
+    font-family: 'El Messiri';
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    
+    padding-top: 150px;
+    
+  }
+
+  
+
+  .img-capa22 {
+    position: absolute;
+    top: 0;
+    right: 700px;
+    rotate: -45deg;
+  }
+
+  .img-capa33 {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .prev-button {
+    left: 10px;
+
+  }
+
+  .prev-button:hover {
+    cursor: pointer;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+  .next-button:hover {
+    cursor: pointer;
+  }
+
+
+
+  .popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; /*/ Скрываем фон и сам попап*/
+    pointer-events: none; /*/ Запрещаем ему быть целью событий*/
+    transition: 0.5s all;
+}
+
+.popup__bg.active { /*/ При добавлении класса 'active'*/
+    opacity: 1; /*/ Показываем фон и попап*/
+    pointer-events: all; /*/ Возвращаем события*/
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Центрируем и масштабируем в 0 само окно*/
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1); 
+    transition: 0.5s all;
+}
+
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label__text {
+    color: #2982ff;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup textarea:focus + .label__text {
+    color: #1d7138;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #1d7138;
+    background: #1d7138;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background: #fff;
+    color:#1d7138;
+    transition: 0.5s all;
+}
+
+.popup-container {
+    max-width: 670px;
+    width: 100%;    
+    margin-top: 50px;
+    margin: 60px auto;
+    /*border: 5px dashed rgb(35, 84, 35);
+    border-radius: 20px;*/
+    background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x;
+    background-size: 4px 1px;
+    background-position: 0 0;
+
+    background: 
+        linear-gradient(90deg, #254a25 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #254a25 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #254a25 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #254a25 50%, transparent 0) repeat-y;
+    background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+
+}
+
+.popup-container:hover {
+    animation: linearGradientMove .3s infinite linear;
+}
+@keyframes linearGradientMove {
+    100% {
+        background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+    }
+}
+
+.open-popup {
+    font-family: 'Rubik Mono One';
+    font-size: 30px;
+    line-height: 80px;
+    color: rgb(5, 99, 5);
+    cursor: pointer;
+    
+}
+
+
+
+.footer {
+    
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color:  #bdbfc4;;
+}
+
+.social {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.social img {
+    width: 45px;
+    cursor: pointer;  
+    
+}
+
+.contacts {
+    max-width: 900px;
+    width: 100%;
+    font-family: 'Rubik Mono One';
+    font-size: 14px;
+    color: rgb(5, 99, 5);
+    padding-top: 14px;
+    
+}

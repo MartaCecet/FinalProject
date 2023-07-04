@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+    <link rel="Stylesheet" href="../styles/style1.css">
+    
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="./page_1.html"><img src="./images/_Path_.png" alt="logo">
+            <span class="logot">Полезная еда</span></a>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu">
+                <li class="menu__active"><a href="./page_1.html">Главная</a></li>
+                <li><a href="./page_2.html">О нас</a></li>
+                <li><a href="./page_3.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#"><img src="./images/Shopping_cart_icon.png" alt="cart"></a>
+            <div class="counter"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__image">
+            <img class="img-plate" src="./images/plate.png.png" alt="plate">
+            <img class="img-capa1" src="./images/Capa1.png" alt="capa">
+            <img class="img-capa2" src="./images/Capa2.png" alt="capa">
+            <img class="img-capa3" src="./images/Capa3.png" alt="capa">
+        </div>
+        <div class="block__info">
+            <h1 class="title">Фермерская</h1>
+            <h2 class="title2">продукция</h2>
+            <p class="main__text">Это не просто биомаркет, это целое комьюнити, которое объединяет людей разных возрастов и интересов, для которых очень важно качество продуктов и их осознанное потребление.
+
+                Наша основная задача – собрать в одном месте все, что необходимо современному человеку, который следит за своим здоровьем:
+                мясо, птицу, молочные продукты, яйца и сезонные овощи.
+                </p>
+        </div>
+
+        
+        
+        
+
+    </main>
+
+
+
+    <div class="slider-container">
+
+      
+      <img class="img-capa22" src="./images/Capa2.png" alt="capa">
+      <img class="img-capa33" src="./images/Capa3.png" alt="capa">
+
+
+      <div class="slider">
+        <img src="./images/slide1.jpg" alt="Наш продукт1">
+        <img src="./images/slide2.jpg" alt="Наш продукт2">
+        <img src="./images/slide3.jpg" alt="Наш продукт3">
+        <img src="./images/slide4.jpg" alt="Наш продукт4">
+        <img src="./images/slide5.jpg" alt="Наш продукт5">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+
+
+    
+      <div class="popup__bg"> 
+        <form class="popup">
+            <img src="./images/close.png" class="close-popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ваше имя
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Ваш телефон
+                </div>
+            </label>
+            <label>
+                <textarea name="message"></textarea>
+                <div class="label__text">
+                    Ваше сообщение
+                </div>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>  
+
+    <div class="popup-container">
+
+    <a href="#" class="open-popup">Нажмите для обратной связи</a>
+    </div>
+
+    
+
+
+    <!--<div class="slider">
+    <div class="itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  
+                  <img src="./images/slide1.jpg" alt="product">
+                </div>
+                <div class="itc-slider__item">
+                  
+                  <img src="./images/slide2.jpg" alt="product">
+                  
+                </div>
+                <div class="itc-slider__item">
+                 
+                  <img src="./images/slide3.jpg" alt="product">
+                  
+                </div>
+                <div class="itc-slider__item">
+                  
+                  <img src="./images/slide4.jpg" alt="product">
+                  
+                </div>
+                <div class="itc-slider__item">
+                  
+                  <img src="./images/slide5.jpg" alt="product">
+                  
+                </div>
+              </div>
+            </div>
+            <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button>
+            
+        </div>
+    </div>-->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><img src="./images/Instagram.png" alt="instagram"></a>
+            <a href="#"><img src="./images/Facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./images/Twitter.png" alt="twitter"></a>
+            <a href="#"><img src="./images/WhatsApp.png" alt="whatsApp"></a>
+
+        </div>
+        <div class="contacts">Минская область, Воложинский район, д.Лужаны, контактный телефон: 123456789</div>
+    </footer>
+</div>
+    
+</body>
+
+
+<script>
+    const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSlider();
+
+
+
+
+//popup
+
+let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+let popup = document.querySelector('.popup'); // Само окно
+let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+
+
+openPopupButtons.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        popup.classList.add('active'); // И для самого окна
+    })
+});
+
+
+closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg.classList.remove('active'); // Убираем активный класс с фона
+    popup.classList.remove('active'); // И с окна
+});
+
+
+
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg) { // Если цель клика - фот, то:
+        popupBg.classList.remove('active'); // Убираем активный класс с фона
+        popup.classList.remove('active'); // И с окна
+    }
+});
+
+
+   
+    
+
+  </script>
+</html>
