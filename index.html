@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+    <link rel="Stylesheet" href="/styles/index.css">
+    <link rel="icon" type="image/png" href="/images/_Path_.png">
+    
+</head>
+<body>
+    <div class="container">
+
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/_Path_.png" alt="logo">
+            <span class="logot">Полезная еда</span></a>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu">
+                <li class="menu__active"><a href="/index.html">Главная</a></li>
+                <li><a href="/pages.html/about.html">О нас</a></li>
+                <li><a href="/pages.html/shopping.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <div class="cart" id="cart">
+           <img src="/images/Shopping_cart_icon.png" alt="cart"> 
+           <div class="cart-counter"></div>          
+        </div>
+
+        
+    </header>
+    <main class="main">
+        <div class="main__image">
+            <img class="img-plate" src="/images/plate.png.png" alt="plate">
+            <img class="img-capa1" src="/images/Capa1.png" alt="capa">
+            <img class="img-capa2" src="/images/Capa2.png" alt="capa">
+            <img class="img-capa3" src="/images/Capa3.png" alt="capa">
+        </div>
+        <div class="block__info">
+            <h1 class="title">Фермерская</h1>
+            <h2 class="title2">продукция</h2>
+            <p class="main__text">Это не просто биомаркет, это целое комьюнити, которое объединяет людей разных возрастов и интересов, для которых очень важно качество продуктов и их осознанное потребление.
+
+                Наша основная задача – собрать в одном месте все, что необходимо современному человеку, который следит за своим здоровьем:
+                мясо, птицу, молочные продукты, яйца и сезонные овощи.
+                </p>
+        </div>
+    </main>
+
+    <div class="slider-container">
+
+      
+      <img class="img-capa22" src="/images/Capa2.png" alt="capa">
+      <img class="img-capa33" src="/images/Capa3.png" alt="capa">
+
+
+      <div class="slider">
+        <img class="slideimg" src="/images/slide1.jpg" alt="Наш продукт1">
+        <img class="slideimg" src="/images/slide2.jpg" alt="Наш продукт2">
+        <img class="slideimg" src="/images/slide3.jpg" alt="Наш продукт3">
+        <img class="slideimg" src="/images/slide4.jpg" alt="Наш продукт4">
+        <img class="slideimg" src="/images/slide5.jpg" alt="Наш продукт5">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+
+
+    
+      <div class="popup__bg"> 
+        <form class="popup">
+            <img src="/images/close.png" class="close-popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ваше имя
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Ваш телефон
+                </div>
+            </label>
+            <label>
+                <textarea name="message"></textarea>
+                <div class="label__text">
+                    Ваше сообщение
+                </div>
+            </label>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>  
+
+    <div class="popup-container">
+
+    <a href="#" class="open-popup">Нажмите для обратной связи</a>
+    </div>
+   
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><img src="/images/Instagram.png" alt="instagram"></a>
+            <a href="#"><img src="/images/Facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/images/Twitter.png" alt="twitter"></a>
+            <a href="#"><img src="/images/WhatsApp.png" alt="whatsApp"></a>
+
+        </div>
+        <div class="contacts">Минская область, Воложинский район, д.Лужаны, контактный телефон: 123456789</div>
+    </footer>
+</div>
+</div>
+    <script src="/const/catalog.js"></script>
+    <script src="/const/root.js"></script>
+    <script src="/utils/localStorageUtil.js"></script>
+
+    <script src="/js/index.js"></script>
+
+    <script src="/components/Header/header.js"></script>
+    <link rel="stylesheet" href="/components/Header/header.css">
+
+    <script src="/components/Products/products.js"></script>
+    <link rel="stylesheet" href="/components/Products/products.css">
+
+    <script src="/components/Cart/cart.js"></script>
+    <link rel="stylesheet" href="/components/Cart/cart.css">
+    
+
+
+</body>
+</html>

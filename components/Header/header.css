@@ -1,0 +1,25 @@
+.header {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    margin: 0 auto;
+   
+    background-color: #bdbfc4;
+    height: 70px;
+}
+
+.cart-counter {
+    max-width: 50px;
+    width: 100%;
+    font-family: 'El Messiri';
+    font-size: 30px;
+    color: rgb(16, 16, 16);
+    padding: 5px 5px;
+    margin: 6px;
+    
+   
+}

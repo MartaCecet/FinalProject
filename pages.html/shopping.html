@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="icon" type="image/png" href="/images/_Path_.png">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/shopping.css">  
+    
+    
+    
+</head>
+<body>
+    <header class="header" id="header">
+
+        <div class="logo">
+            <a href="/pages/page_1.html"><img src="/images/_Path_.png" alt="logo">
+            <span class="logot">Полезная еда</span></a>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu">
+                <li class="menu__active"><a href="/index.html">Главная</a></li>
+                <li><a href="/pages.html/about.html">О нас</a></li>
+                <li><a href="/pages.html/shopping.html">Каталог</a></li>
+            </ul>
+        </nav>
+        <div class="cart" id="cart">
+            <img src="/images/Shopping_cart_icon.png" alt="cart">
+            <div class="cart-counter"></div>            
+        </div>
+    </header>
+    <main class="main">
+    <div id="products"></div>
+    </main>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><img src="/images/Instagram.png" alt="instagram"></a>
+            <a href="#"><img src="/images/Facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/images/Twitter.png" alt="twitter"></a>
+            <a href="#"><img src="/images/WhatsApp.png" alt="whatsApp"></a>
+
+        </div>
+        <div class="contacts">Минская область, Воложинский район, д.Лужаны, контактный телефон: 123456789</div>
+    </footer>
+
+    <script src="/const/catalog.js"></script>
+    <script src="/const/root.js"></script>
+    <script src="/utils/localStorageUtil.js"></script>
+
+    
+
+    <script src="/components/Header/header.js"></script>
+    <link rel="stylesheet" href="/components/Header/header.css">
+
+    <script src="/components/Products/products.js"></script>
+    <link rel="stylesheet" href="/components/Products/products.css">
+
+    <script src="/components/Cart/cart.js"></script>
+    <link rel="stylesheet" href="/components/Cart/cart.css">
+    
+</body>
+</html>
