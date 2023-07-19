@@ -1,50 +1,57 @@
-const Catalog = [
+const CATALOG = [
     {
         id: 'el1',
-        name: 'Лук',
+        name: 'Лук 1кг',
         img: 'https://i.ibb.co/BNYTsxq/onion-jpg.jpg',
-        price: 20 + 'р./кг',
+        price: 20,
+        
     },
     {
         id: 'el2',
-        name: 'Молоко',
+        name: 'Молоко 1л',
         img: 'https://i.ibb.co/26fzxh9/milk.jpg',
-        price: 5 + 'р./л',
+        price: 5,
+        
     },
     {
         id: 'el3',
-        name: 'Клубника',
+        name: 'Клубника 1кг',
         img: 'https://i.ibb.co/5Tj41dX/strawberry.jpg',
-        price: 7 + 'р./кг',
+        price: 7,
     },
     {
         id: 'el4',
-        name: 'Яйцо',
+        name: 'Яйцо 1дес.',
         img: 'https://i.ibb.co/5F2ZGzJ/egg.jpg',
-        price: 5 + 'р./десяток',
+        price: 5,
+        
     
     },
     {
         id: 'el5',
-        name: 'Картофель',
+        name: 'Картофель 1кг',
         img: 'https://i.ibb.co/CtwNT4z/potato.jpg',
-        price: 2 + 'р./кг',
+        price: 2,
+        
     },
     {
         id: 'el6',
-        name: 'Огурцы',
+        name: 'Огурцы 1кг',
         img: 'https://i.ibb.co/7RFJ9cJ/cucumber.jpg',
-        price: 2 + 'р./кг',
+        price: 2,
+        
     },
     {
         id: 'el7',
-        name: 'Помидоры',
+        name: 'Помидоры 1кг',
         img: 'https://i.ibb.co/7bZrhFw/tomato.jpg',
-        price: 4 + 'р./кг',
+        price: 4,
+        
     },
     {
         id: 'el8',
-        name: 'Мед',
+        name: 'Мед 1л',
         img: 'https://i.ibb.co/F303h3R/honey.jpg',
-        price: 20 + 'р./л',
+        price: 20,
+        
     }];

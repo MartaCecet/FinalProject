@@ -18,10 +18,11 @@ class Header {
                 <li><a href="/pages.html/shopping.html">Каталог</a></li>
             </ul>
         </nav>
-        <div class="cart">
-           <img src="/images/Shopping_cart_icon.png" alt="cart">
-           <div class="cart-counter" onclick="headerPage.handlerOpenCartPage();">${count}</div>           
-        </div>       
+        <div class="cart" id="cart">
+           <img src="/images/Shopping_cart_icon.png" alt="cart" onclick="headerPage.handlerOpenCartPage();">
+           <div class="cart-counter">${count}</div>
+        </div>           
+        </header>      
         `;
 
         ROOT_HEADER.innerHTML = html;
